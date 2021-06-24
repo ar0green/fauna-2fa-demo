@@ -5,8 +5,8 @@
   <div class="row justify-content-center">
     <div class="col-lg-12">
       <div class="jumbotron text-center p-4">
-        <h2>Fauna Two-Factor Authentication (2FA) Demo</h2>
-        <h5>Create an account to get started!</h5>
+        <h2>Курсовая работа: Двухфаткорная аутентификация (2FA)</h2>
+        <h5>Создайте аккаунт, чтобы приступить к работе!</h5>
       </div>
     </div>
 
@@ -22,16 +22,16 @@
       {% endwith %}
       <form method="POST">
         <div class="form-group">
-          <label for="email">Email Address</label>
+          <label for="email">E-mail</label>
           <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email Address" required>
         </div>
         <div class="form-group">
-          <label for="password">Password</label>
+          <label for="password">Пароль</label>
           <input type="password" class="form-control" id="password" name="password" placeholder="Choose Password" required>
         </div>
         <div class="text-center">
-          <button type="submit" class="btn btn-success">Create Account</button>
-          <a href="{{ url_for('login') }}"><small class="form-text text-success">Already have an account? Login</small></a>
+          <button type="submit" class="btn btn-success">Создайте аккаунт</button>
+          <a href="{{ url_for('login') }}"><small class="form-text text-success">Уже есть аккаунт? Залогиньтесь!</small></a>
         </div>
       </form>
     </div>

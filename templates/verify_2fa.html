@@ -5,17 +5,17 @@
   <div class="row justify-content-center">
     <div class="col-lg-12">
       <div class="jumbotron text-center p-4">
-        <h2>Fauna Two-Factor Authentication (2FA) Demo</h2>
-        <h5>Set Up TOTP 2FA!</h5>
+        <h2>Курсовая работа: Двухфаткорная аутентификация (2FA)</h2>
+        <h5>TOTP 2FA!</h5>
       </div>
     </div>
 
     <div class="col-lg-5">
       <h5>Instructions!</h5>
       <ul>
-        <li>Download <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en&gl=US" target="_blank">Google Authenticator</a> on your mobile.</li>
-        <li>Enroll your account.</li>
-        <li>Submit the generated OTP in the form for authentication.</li>
+        <li>Скачайте <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en&gl=US" target="_blank">Google Authenticator</a> на свое устройство.</li>
+        <li>Добавьте свой аккаунт.</li>
+        <li>Подвертиде сгенерированный OTP в форме для аутентификации.</li>
       </ul>
     </div>
     <div class="col-lg-7">
@@ -30,12 +30,12 @@
       {% endwith %}
       <form method="POST">
         <div class="form-group">
-          <label for="otp">Enter Generated OTP</label>
+          <label for="otp">Введите полученный OTP</label>
           <input type="number" class="form-control" id="otp" name="otp" required>
         </div>
         <div class="text-center">
-          <button type="submit" class="btn btn-success">Authenticate Account</button>
-          <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
+          <button type="submit" class="btn btn-success">"Верифицируйте аккаунт"</button>
+          <a href="{{ url_for('logout') }}" class="btn btn-danger">Выход</a>
         </div>
       </form>
     </div>

@@ -3,14 +3,13 @@ import pyotp
 from flask import *
 from flask_bootstrap import Bootstrap
 from faunadb import query as q
-from faunadb.objects import Ref
 from faunadb.client import FaunaClient
 from faunadb.errors import BadRequest, Unauthorized
 
 app = Flask(__name__)
 Bootstrap(app)
 app.config["SECRET_KEY"] = "APP_SECRET_KEY"
-client = FaunaClient(secret="FAUNA_SECRET_KEY")
+client = FaunaClient(secret="fnAEMgE1D7ACAdYpzY8iH0n01D4saxBVGcJtjbeR")
 
 
 def get_user_details(user_secret):
